@@ -1,0 +1,7 @@
+{description, "A basic EUnit test file for an OTP application"}.
+{variables, [
+    {name, "app", "Name of the app/lib, prepended to the standard _tests suffix"}
+]}.
+
+{dir, "test"}.
+{template, "eunit.erl", "test/{{name}}_tests.erl"}.

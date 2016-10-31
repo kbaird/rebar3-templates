@@ -1,0 +1,5 @@
+% Replace with real values and move to globals filename
+{variables, [
+    {author_name,    "Paul Atriedes"},
+    {author_email,   "muaddib@usul.tld"}
+   ]}.
