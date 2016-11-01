@@ -1,4 +1,4 @@
--module('{{topic}}_test').
+-module('{{name}}_test').
 -author('{{author_name}}').
 
 -include_lib("eunit/include/eunit.hrl").
@@ -6,20 +6,20 @@
 lone_test() ->
     ?assertEqual(true, write_some_real_ones).
 
-% {{topic}}
+% {{name}}
 
-{{topic}}_setup()     -> ok.
-{{topic}}_teardown(_) -> ok.
+{{name}}_setup()     -> ok.
+{{name}}_teardown(_) -> ok.
 
-{{topic}}_test_() ->
-    {setup, fun {{topic}}_setup/0,
-            fun {{topic}}_teardown/1,
+{{name}}_test_() ->
+    {setup, fun {{name}}_setup/0,
+            fun {{name}}_teardown/1,
             [
-                fun {{topic}}_initial_case/0
+                fun {{name}}_initial_case/0
             ]
     }.
 
-{{topic}}_initial_case() ->
+{{name}}_initial_case() ->
     ?assertEqual(true, write_some_real_ones).
 
 %%% PRIVATE FUNCTIONS
