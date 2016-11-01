@@ -4,4 +4,6 @@ Custom templates for generation _via_ `rebar3`
 
 ## Eunit
 
-    $ rebar3 new eunit _zoidberg_ topic=_foo_
+    $ rebar3 new eunit topic=foo
+
+This will create a new `test/foo_test.erl` file with failing boilerplate tests.
