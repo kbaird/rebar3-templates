@@ -1,7 +1,7 @@
-{description, "A basic EUnit test file for an OTP application"}.
+{description, "A basic EUnit test file for an OTP application, to be executed at the top-level, inside."}.
 {variables, [
-    {name, "app", "Name of the app/lib, prepended to the standard _tests suffix"}
+    {topic, "foo", "The topic or concern of a given test file"}
 ]}.
 
 {dir, "test"}.
-{template, "eunit.erl", "{{name}}/test/{{name}}_test.erl"}.
+{template, "eunit.erl", "test/{{topic}}_test.erl"}.
