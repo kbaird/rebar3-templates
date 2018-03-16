@@ -8,6 +8,9 @@ Custom templates for generation _via_ `rebar3`
 
 ## Eunit
 
+Presuming you have already executed `rebar3 new lib foo`, now execute:
+
     $ rebar3 new eunit foo
 
-This will create a new `test/foo_test.erl` file with failing boilerplate tests.
+This will create a new `test/foo_test.erl` file with failing boilerplate tests
+within your existing `foo` project.
